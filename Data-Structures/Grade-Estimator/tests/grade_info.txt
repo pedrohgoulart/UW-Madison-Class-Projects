@@ -1,0 +1,12 @@
+A B C D F N                    # letter grades
+90 80 70 60 5 0                # minimum thresholds
+homework program midterm final # category names
+20 25 34 21                    # category weights of 100
+h1 34 50                       # homework 1 34/50 points
+h2 29 30                       # homework 2
+p1 195 200                     # program 1
+p2 230 240                     # program 2
+p3 50 80                       # program 3
+m1 57 66                       # exam 1 56/66
+m2 61 66                       # exam 2 61/66
+f 78 81                        # final exam 78/81

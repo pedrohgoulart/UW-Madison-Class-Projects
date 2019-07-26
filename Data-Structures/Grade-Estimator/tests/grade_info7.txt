@@ -1,0 +1,6 @@
+A C F
+85 67 0
+homework program exam
+30 34 36
+
+p3 165 210

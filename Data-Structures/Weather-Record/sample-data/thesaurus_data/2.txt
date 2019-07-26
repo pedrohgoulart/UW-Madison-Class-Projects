@@ -1,0 +1,2 @@
+bad:naughty,unfavorable
+good:acceptable,favorable,quality
