@@ -1,0 +1,51 @@
+This is an instruction file for the 537ps program.
+
+Authors: Pedro Henrique Koeler Goulart and Varun Sreenivasan
+Current Version: 1.0
+
+
+Description:
+	- This program takes inspiration from the "ps" command in linux and 
+          lists OS processes that belong to the current user. This program can 
+          show the process id (pid), process state information, user time, 
+          system time, amount of virtual memory, and command line that started 
+          the process.
+
+
+Known issues:
+	- No known issues for this version.
+
+
+How to use:
+	- This section describes the development and use for 537ps.
+	1. Set up
+		- Copy files contained in 537ps.zip into desired directory.
+		- Use the "make" command to assemble the program.
+	2. Development
+		- Use the options.c file to add/remove/edit output of the program.
+		- Create new files if other processes information is needed.
+	3. Use
+		- Initialize the program by using the "537ps" command followed by 
+                  display options (below).
+		- Possible display options include:
+			-p <pid> # Process ID (if no -p provided, lists all processes)
+			-s # Process state information
+			-U # User time (enabled by default)
+			-S # System time
+			-v # Amount of virtual memory
+			-c # Command-line that started process (enabled by default) 
+		- Writing -n, where n is one of the characters above, on the 
+                  program enables a display option (lists process information), 
+                  while writing -n-, where n is one of the characters above, disables 
+                  a display option.
+                - If there is repeated input (like -n and -n- for example), the 
+                  program will take the last one (-n- in the case above). 
+
+Layout:
+	1. Files
+		- Makefile # Assembles program
+		- options.c # Controls input/output of the program and calls methods.
+		- processList.c # Counts and stores information on number of processes that belong to user.
+		- processList.h # Header file for processList
+		- stats.c # Retrieves information from proc/<pid>/ folder according to option chosen.
+		- stats.h # Header file for stats

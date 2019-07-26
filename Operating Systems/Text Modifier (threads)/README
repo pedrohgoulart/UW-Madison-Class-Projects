@@ -1,0 +1,57 @@
+This is an instruction file for the prodcomm program.
+
+Authors: Pedro Henrique Koeler Goulart and Varun Sreenivasan
+Current Version: 1.0
+
+
+Description:
+	- This program reads a file, modifies it, and displays its content.
+	  It is divided into 4 threads that each perform a separate function
+	  and can run in a synchronized and parallel fashion. The first
+	  thread (Reader) reads the input, the second one (Munch 1) 
+	  substitutes blank chars with *, the third one (Munch 2) converts 
+	  chars to uppercase, and the last one (Writer) displays the output or
+	  writes it to a file. 
+
+
+Known issues:
+	- No known issues for this version.
+
+
+How to use:
+	- This section describes the development and use for prodcomm.
+	1. Set up
+		- Copy files contained in prodcomm.zip into desired directory.
+		- Use the "make" command to assemble the program.
+	2. Development
+		- Use the queue.c and threads.c files to add/remove/edit output 
+		  of the program.
+		- Create new files if other processes information is needed.
+	3. Use
+		- Initialize the program by using the "prodcomm" command 
+		  followed by "< input_file_name" if you would like to read
+		  from a file and "> output_file_name" if you would like
+		  to have the output written to a file. If input is not 
+		  provided, the program will read input from keyboard, and 
+		  if output is not provided, the program will display output.
+		- Size of buff (line taken into queue) can be changed on the 
+		  threads.c file. Variable is called buf_char_size.
+		- Size of queue can be changed on the main.c file. Variable
+		  is called queue_size. Must be a natural number >= 1.
+
+Observations:
+	1. Last item on the queue will always be empty so that the queue can
+	   accuratly check if it is empty.
+	2. Queue status will always appear to have one additional enqueue and 
+	   dequeue. This is because of how the program identifies a
+	   terminating thread and is an expected behavior.
+
+Layout:
+	1. Files
+		- Makefile # Assembles program
+		- main.c # Creates and calls queues and threads.
+		- threads.c # Manages all threads for the program, currently it has Read,
+		  Munch1, Munch2, and Write.
+		- threads.h # Header file for threads
+		- queue.c # Manages queue for program.
+		- queue.h # Header file for queue

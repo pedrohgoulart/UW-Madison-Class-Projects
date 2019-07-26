@@ -1,0 +1,66 @@
+This is an instruction file for the 537make program.
+
+Authors: Pedro Henrique Koeler Goulart and Varun Sreenivasan
+Current Version: 1.1
+
+Changes on version 1.1:
+	- proc_creation_prog_exec.c (line 109), added free loop call to free 
+	  commands array. Fixed memory leak error.
+	- proc_creation_prog_exec.c (line 131), added free loop call to free 
+	  commands array. Fixed memory leak error.
+	- proc_creation_prog_exec.c (line 215), added free loop call to free 
+	  all commands arrays saved on myList. Fixed memory leak error.
+	- build_spec_repr.c (line 210), added free command to free the S_repr 
+	  variable. Fixed memory leak error.
+
+
+Description:
+	- This program, similarly to the 'make' command, runs commands when
+	  given a makefile. A makefile should be composed by targets,
+	  dependencies, and commands. The program reads the file, creates
+	  a graph, creates processes, and executes the commands.
+	- This program takes into account the same format allowed by makefile,
+	  displaying warnings if the file provided does not compile to it, or
+	  if there were any errors with the graph creation or process execution.
+
+Known issues:
+	- No known issues for this version.
+
+
+How to use:
+	- This section describes the development and use for 537make.
+	1. Set up
+		- Copy files contained in 537make.zip into desired directory.
+		- Use the "make" command to assemble the program.
+	2. Development
+		- Use the text_parsing.c file to add error messages related to
+		  parsing, or build_spec_graph.c for messages related to graph
+		  creation/traversal. Additionally, use the 
+		  proc_creation_proc_exec.c file for any error messages related
+		  to process creation/execution. 
+	3. Use
+		- Use the "-f file_name" command to open a file that does not 
+		  have the default name of makefile. 
+		- You can specify a name of a target to be run by using the
+		  "537make target_name" command.
+		- Size of BUF_CHAR_SIZE can be changed on text_parsing.c 
+
+Observations:
+	- If multiple targets are found, 537make will execute only the first
+	  one it finds on the file (top-down).
+
+Layout:
+	1. Files
+		- Makefile # Assembles program
+		- main.c # Calls functions.
+		- text_parsing.c # Checks if file is valid and creates string
+		  array of all lines
+		- text_parsing.h # Header file for text parsing
+		- build_spec_repr.c # Creates nodes for graph    
+		- build_spec_repr.h # Header file for graph representation 
+		- build_spec_graph.c # Creates the graph and handles traversal
+		- build_spec_graph.h # Header file for graph
+		- proc_creation_prog_exe.c # Executes commands
+		- proc_creation_prog_exe.h # Header file for process creation
+		  and execution
+

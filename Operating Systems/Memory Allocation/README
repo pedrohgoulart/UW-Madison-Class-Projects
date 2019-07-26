@@ -1,0 +1,44 @@
+This is an instruction file for the malloc537, free537, realloc537, and memcheck537
+functions.
+
+Authors: Pedro Henrique Koeler Goulart and Varun Sreenivasan
+Current Version: 1.0
+
+Description:
+	- These functions are similar to malloc, free, and realloc, but they 
+	  perform safety checks. These functions can be called just like you normally
+	  would call malloc, free, and realloc. 
+	- Memcheck537 checks if the memory currently allocated/freed matches data kept
+	  by malloc537, free537, and realloc537 functions.
+
+Known issues:
+	- No known issues for this version.
+
+How to use:
+	- This section describes the development and use for the functions.
+	1. Set up
+		- Copy files contained in malloc537.zip into desired directory.
+		- Combine the makefile of your program with the provided makefile.
+		- Include #include "537malloc.h" on your program files.
+	2. Development
+		- Use the 537malloc.c file to add more functions or edit current
+		  functions. You can also use range_tree.c to edit the behavior of
+		  the tree (data structure responsible for keeping information on
+		  allocated and freed memory). 
+	3. Use
+		- Call malloc537, free537, realloc537, or memcheck537 respecting the 
+		  header file 537malloc.h specifications.
+
+Observations:
+	- You can not free a NULL pointer to memory.
+	- A warning will be displayed if you attempt to allocate/reallocate a memory of
+	  size 0.
+
+Layout:
+	1. Files
+		- Makefile # Assembles program
+		- 537malloc.c # Main functions    
+		- 537malloc.h # Header file for main functions
+		- range_tree.c # Functions for tree add/remove node, search, and balance
+		- range_tree.h # Header file for tree functions
+		
