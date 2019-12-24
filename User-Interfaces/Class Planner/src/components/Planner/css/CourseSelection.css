@@ -1,0 +1,24 @@
+/* Course card */
+.Course-selection-container {
+  background-color: var(--section-background-dark);
+  border: 0;
+  border-radius: var(--main-border-radius);
+  margin: .5rem 0;
+}
+
+.Course-selection-container:hover {
+  background-color: var(--selected-background);
+  cursor: pointer;
+}
+
+.Course-selection-container:first-child {
+  margin-top: 0;
+}
+
+.Course-selection-container:last-child {
+  margin-bottom: 0;
+}
+
+.Course-selection-empty {
+  background-color: var(--section-background-light);
+}

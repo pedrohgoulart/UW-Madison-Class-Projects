@@ -1,0 +1,27 @@
+.App-sidebar {
+  background-color: var(--section-background);
+  border: 0;
+  border-radius: var(--main-border-radius);
+  flex: 0 1 22rem;
+  height: calc(100vh - 5.5rem);
+  margin-right: 0.5rem;
+}
+
+.App-course-list {
+  flex: 1 1 auto;
+  height: calc(100vh - 5.5rem);
+  overflow-y: scroll;
+}
+
+/* Warnings */
+.App-warning {
+  align-items: flex-start;
+  background-color: var(--section-background-dark);
+  border-radius: var(--main-border-radius);
+  text-align: center;
+  padding: .75rem;
+}
+
+.App-warning h6 {
+  margin: 0;
+}

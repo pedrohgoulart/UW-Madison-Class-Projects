@@ -1,0 +1,49 @@
+.App-course-container {
+  background-color: var(--section-background);
+  border: 0;
+  border-radius: var(--main-border-radius);
+  flex: 0 auto;
+  margin: .5rem 0;
+}
+
+.App-course-container:first-child {
+  margin-top: 0;
+}
+
+.App-course-container:last-child {
+  margin-bottom: 0;
+}
+
+/* Card */
+.Card-header-selectable:hover {
+  background-color: var(--section-background);
+  cursor: pointer;
+}
+
+/* Modal */
+.Modal-accordion-row-container {
+  display: flex;
+}
+
+.Modal-accordion-row-selection {
+  flex: 0 0 1rem;
+}
+
+.Modal-accordion-row-details {
+  flex: 1 1 auto;
+}
+
+.Modal-subsection-card-body {
+  padding-bottom: 0;
+  padding-left: 1.5rem;
+  padding-top: 0;
+}
+
+.Modal-subsection-row {
+  border-bottom: var(--row-divider);
+  padding: 0.5rem 0;
+}
+
+.Modal-subsection-row:last-child {
+  border-bottom: 0;
+}

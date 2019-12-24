@@ -1,0 +1,10 @@
+.Badge-margin {
+	margin: 0 5px;
+}
+
+.Tags {
+	border-radius: 50vh;
+	font-size: 0.5rem;
+	margin-left: 0.2rem;
+	padding: 0 0.2rem;
+}

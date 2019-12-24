@@ -1,0 +1,24 @@
+:root {
+  --base-text-color: #212529;
+  --highlight-text-color-light: rgba(179, 40, 30, 0.85);
+  --highlight-text-color: #B3271E;
+  --highlight-text-color-dark: #95211A;
+  --section-background-light: #fff;
+  --section-background: #eee;
+  --section-background-dark: #ccc;
+  --main-border-radius: .6rem;
+  --circular-border-radius: 50vh;
+
+  --selected-background: #b8b8b8;
+  --row-divider: 0.05rem solid rgba(0,0,0,.3);
+}
+
+body {
+  color: var(--base-text-color);
+  margin: 0;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+code {
+  font-family: Menlo, "Courier New", monospace;
+}

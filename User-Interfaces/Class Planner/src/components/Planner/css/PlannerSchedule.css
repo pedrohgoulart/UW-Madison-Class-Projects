@@ -1,0 +1,54 @@
+.Planner-schedule-container {
+  background-color: var(--section-background);
+  border: 0;
+  border-radius: var(--main-border-radius);
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: calc(100vh - 5.5rem);
+  overflow: none;
+}
+
+.Planner-schedule-header {
+  background-color: var(--section-background-dark);
+  border-radius: var(--main-border-radius) var(--main-border-radius) 0 0;
+  display: flex;
+  flex: 0 0 3rem;
+  padding: 0.5rem .85rem;
+}
+
+.Planner-schedule-header-pagination {
+  flex: 1 1 auto;
+}
+
+.Planner-schedule-header-credits {
+  flex: 1 1 auto;
+  text-align: right;
+}
+
+.Planner-schedule-table {
+  border-radius: 0 0 var(--main-border-radius) var(--main-border-radius);
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  overflow-y: auto;
+}
+
+.Schedule-table-column {
+  border-radius: 0;
+  text-align: center;
+  flex: 1 1 0;
+  overflow: visible;
+  width: auto;
+}
+
+.Schedule-table-item {
+  background-color: var(--highlight-text-color-light);
+  color: #fff;
+  line-height: 1rem;
+  overflow-y: auto;
+  padding: 0.2rem;
+  position: absolute;
+  text-align: left;
+  width: calc(100% - 0.4rem);
+}

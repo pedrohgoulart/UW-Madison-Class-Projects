@@ -1,0 +1,4 @@
+.Planner-course-selection-list {
+  height: calc(100vh - 11.5rem);
+  overflow-y: scroll;
+}

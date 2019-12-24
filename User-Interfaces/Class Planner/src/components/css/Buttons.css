@@ -1,0 +1,25 @@
+.btn-custom-red {
+  background-color: var(--highlight-text-color);
+  color: #fff;
+}
+
+.btn-custom-red:hover {
+  background-color: var(--highlight-text-color-dark);
+  color: #fff;
+}
+
+.btn-custom-grey {
+  background-color: var(--section-background-dark);
+}
+
+.btn-custom-grey:hover {
+  background-color: #aaa;
+}
+
+.btn-custom-grey-light {
+  background-color: var(--section-background);
+}
+
+.btn-custom-grey-light:hover {
+  background-color: #aaa;
+}
