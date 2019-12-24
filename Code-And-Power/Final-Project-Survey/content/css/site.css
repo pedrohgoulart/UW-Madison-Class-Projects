@@ -1,0 +1,276 @@
+/* ============================ General Layout ============================ */
+body {
+    color: #222;
+    display: flex;
+	font-family: 'Helvetica', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 700;
+    margin-bottom: 2rem;
+	text-align: center;
+}
+
+h2 {
+    margin: 0;
+}
+
+a {
+	color: #0099ff;
+}
+
+a:hover {
+	color: #0099ff;
+}
+
+.rounded-corners {
+    border-radius: 0.6rem;
+    width: 100%;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* ============================ Sections Layout ============================ */
+main {
+    display: flex;
+    flex: 1 1 auto;
+	flex-direction: column;
+}
+
+nav {
+    backdrop-filter: blur(0.4rem);
+    background-color: #eee;
+    background-color: rgba(238, 238, 238, 0.85);
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+header {
+    flex: 0 auto;
+}
+
+section {
+    flex: 1 1 auto;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    width: 90%;
+}
+
+footer {
+    align-content: flex-end;
+    background-color: #eee;
+    flex: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer small {
+    padding: 0.2rem;
+}
+
+/* ============================ Header ============================ */
+.header-main {
+    background: #0099ff;
+}
+
+.header-main-title {
+    color: #eee;
+    font-size: 2.5rem;
+    padding: 4.5rem 0 2rem 0;
+}
+
+/* ============================ Navbar Layout ============================ */
+.navbar {
+    flex: 1 1 auto;
+    font-size: 1rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.navbar a {
+    border-radius: 0.6rem;
+    float: left;
+    padding: 0.6rem;
+    margin: 0.5rem;
+    text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    background-color: inherit;
+    border: none;
+    border-radius: 0.6rem;
+    color: #0099ff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0.5rem;
+    outline: none;
+    padding: 0.5rem;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ccc;
+}
+
+.dropdown-content {
+  display: none;
+  position: inherit;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #0099ff;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ccc;
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline;
+}
+
+/* ============================ Questions ============================ */
+.question-item {
+    margin: 2rem 0;
+}
+
+.question-options {
+    display: flex;
+    align-items: center;
+}
+
+.question-options-agree {
+    color: #60A685;
+    margin-right: 0.75rem;
+}
+
+.question-options-disagree {
+    color: #710F15;
+    margin-left: 0.75rem;
+}
+
+.question-options-button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 0.1rem solid #ccc;
+    border-radius: 50vh;
+    cursor: pointer;
+    margin: 0 0.25rem;
+    transition: all .15s ease-in-out;
+}
+
+.question-options input:nth-child(2) {
+    border-color: #60A685;
+    padding: 1.1rem;
+}
+
+.question-options input:nth-child(2):checked {
+    background-color: #60A685;
+}
+
+.question-options input:nth-child(3) {
+    border-color: #60A685;
+    padding: 1rem;
+}
+
+.question-options input:nth-child(3):checked {
+    background-color: #60A685;
+}
+
+.question-options input:nth-child(4) {
+    border-color: #60A685;
+    padding: 0.9rem;
+}
+
+.question-options input:nth-child(4):checked {
+    background-color: #60A685;
+}
+
+.question-options input:nth-child(5) {
+    padding: 0.8rem;
+}
+
+.question-options input:nth-child(5):checked {
+    background-color: #ccc;
+}
+
+.question-options input:nth-child(6) {
+    border-color: #710F15;
+    padding: 0.9rem;
+}
+
+.question-options input:nth-child(6):checked {
+    background-color: #710F15;
+}
+
+.question-options input:nth-child(7) {
+    border-color: #710F15;
+    padding: 1rem;
+}
+
+.question-options input:nth-child(7):checked {
+    background-color: #710F15;
+}
+
+.question-options input:nth-child(8) {
+    border-color: #710F15;
+    padding: 1.1rem;
+}
+
+.question-options input:nth-child(8):checked {
+    background-color: #710F15;
+}
+
+/* ============================ Buttons ============================ */
+/* Default page buttons */
+.btn {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: #eee;
+    border: none;
+    border-radius: 50vh;
+    color: #222;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    transition: all .15s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.btn-link {
+    margin-top: 0.5rem;
+    text-decoration: none;
+}
+
+input:focus, button:focus{
+    outline: none;
+}
+
+.margin-vertical {
+    margin: 2rem 0;   
+}

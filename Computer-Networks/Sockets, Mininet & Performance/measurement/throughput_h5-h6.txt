@@ -1,0 +1,8 @@
+H5
+root@mininet-vm:~/assign1# java Iperfer -c -h 10.0.0.6 -p 2000 -t 30
+sent=114873 KB rate=29.605 Mbps
+
+H6
+root@mininet-vm:~/assign1# java Iperfer -s -p 2000
+received=114873 KB rate=26.786 Mbps
+
